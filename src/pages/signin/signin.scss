@@ -1,0 +1,138 @@
+page-signin {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+          .toolbar-title {
+            color: black;
+          }
+        }
+      }
+
+
+
+
+
+      
+    ion-content{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.6)), url(../assets/imgs/reh.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+ 
+        
+    }
+p{
+    color: white;
+    letter-spacing: 2px;
+    font-family: dale Mono, monospace;
+}
+.signin{
+    margin-top: 10%;
+    
+    .ima{
+        margin: 0%;
+        padding: 0%;
+        img{
+            width: 20%;
+            height: 20%;
+           
+        }
+        
+    }
+}
+h1{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: wheat;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 80px;
+}
+
+.signup{
+    color: white;
+    h5{
+        font-size: 90%;
+          text-align: center;
+    }
+    .uu{
+        margin-left: 5px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 170%;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+
+        color: wheat;
+
+    }
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        letter-spacing: 1px !important;
+        padding: 0%;
+        margin: 2%;
+}
+
+    ion-item{
+        margin-top: 0%;
+        background-color: transparent !important;
+        border-bottom:1px solid #c8c7cc !important;
+        border-top: 0px solid black !important;
+        color: wheat !important;
+    }
+    .new{
+        width:80%;
+        color: wheat;
+      }
+    .item-inner{
+        border-bottom: 0px solid grey !important;
+    }
+    .buttondiv{
+        padding: 0 60px;
+        .button-outline-md{
+            border-color: white !important;
+            color: white !important;
+            padding: 20px;
+            width: 60%;
+            background-color:rgba(238, 234, 234, 0.479) !important;
+            letter-spacing: 2px;
+            margin-top: 10px !important;
+            
+           
+        }
+        .button-outline-ios{
+            border-color: white !important;
+            color: white !important;
+            padding: 20px;
+            width: 60%;
+            background-color:rgba(238, 234, 234, 0.479) !important;
+            letter-spacing: 2px;
+            margin-top: 10px !important;
+           
+        }
+    }
+
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+        border-width :0px !important;
+    }
+
+
+
+
+    .button-md-darkblue{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        letter-spacing: 1px !important;
+        font-size:80% !important;
+        
+    }
+    .button-md,.button-ios{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        letter-spacing: 1px !important;
+        font-size:90% !important;
+    }
+}

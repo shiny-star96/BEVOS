@@ -1,0 +1,78 @@
+page-signup {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+          .toolbar-title {
+            color: black;
+          }
+        }
+      }
+    ion-content{
+        background-image: url(../assets/imgs/Homepage.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        button{
+            width: 60%;
+            font-size: 90% !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(97, 87, 87, 0.5) !important;
+            // margin: 0 !important;
+            border-bottom-right-radius: 100px !important;
+            border-top-right-radius: 100px !important;
+            vertical-align: middle;
+            .button-inner{
+                justify-content:flex-start;
+                
+                ion-icon{
+                    padding-right: 5px !important;
+                }
+            }
+            
+        }
+        .signupGroup{
+            margin-top: 15%;
+            
+        }
+        .btnDiv1{
+            width: 100%;
+            height: 100%;
+        }
+        .btnDiv2{
+            width: 100%;
+            height: 100%;
+        }
+        .btnDiv3{
+            width: 100%;
+            height: 100%;
+        }
+        .btnDiv1, .btnDiv2, .btnDiv3 {
+            ion-item{
+                background-color:transparent !important;
+                width: 80%;
+                margin: auto;
+            }
+            button{
+            width: 60%;
+            margin: auto;
+            border: 0px !important;
+            justify-content:center !important;
+        }}
+    }
+
+    .button-inner{
+        color:b !important;
+        justify-content:center !important;
+
+    }
+    
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+        border-width :0px !important;
+    }
+
+}

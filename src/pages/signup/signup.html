@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="signupGroup">
+    <button ion-button (click)="goToUser()" toggle>
+      <ion-icon name="home"></ion-icon>
+      Create User Account
+    </button>
+    <br>
+    <button ion-button (click)="goToAdmin()">
+      <ion-icon name="home"></ion-icon>
+      Create Admin Account
+    </button>
+    <br>
+    <button ion-button (click)="goToBusiness()">
+      <ion-icon name="home"></ion-icon>
+      Create Business Account
+    </button>
+    <br>
+  </div>
+
+  <div class="btnDiv1" *ngIf="btn==1">
+    <ion-item>
+      <ion-label floating>User Name</ion-label>
+      <ion-input type="text" [(ngModel)]="data.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="data.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="data.password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="data.confirmpassword"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button outline block round color="dark" (click)="signUpUser()">SIGN UP</button>
+
+  </div>
+
+
+  <div class="btnDiv2" *ngIf="btn==2">
+    <ion-item>
+      <ion-label floating>Admin Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Confirm Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button outline block round color="dark">SIGN UP</button>
+  </div>
+
+
+  <div class="btnDiv3" *ngIf="btn==3">
+    <ion-item>
+      <ion-label floating>Company Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Confirm Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button outline block round color="dark"  (click)="store">SIGN UP</button>
+  </div>
+
+</ion-content>

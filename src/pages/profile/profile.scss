@@ -1,0 +1,146 @@
+page-profile {
+
+
+    ion-content {
+        
+        background-image: url('../assets/imgs/5-01.jpeg');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+
+  
+      }
+    .class1{
+        text-align: center;
+      margin: auto;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 10%;
+       
+        background-color: rgba($color:rgb(255, 255, 255), $alpha: 0.5);
+       
+border:0.5px solid rgb(255, 255, 255);
+        
+         img{
+
+        
+            margin: auto;
+            margin-top: -20px;
+            border-radius: 70px;
+            width: 100px;
+            height: 100px;
+            box-shadow: 2px 7px 2px 1px rgba(0, 0, 0, 0.2);
+         }
+        .class2{
+            margin: auto;
+           
+            h1{
+                font-family: Brush Script MT, Brush Script Std, cursive;
+                color: black;
+                font-size: 40px;
+                letter-spacing: 2px;
+                
+                
+            }
+            h5{
+                margin: 0%;
+            }
+            p{
+                margin: 0%;
+            }
+
+        }
+ 
+
+        .class3{
+            margin: auto;
+            width:80%;
+            display: inline-flex;
+            margin-bottom: -20px;
+        
+            .button-outline-md,.button-outline-ios,.button-ios,.button-md{
+                border-color: white !important;
+                border: 1px solid;
+                color: wheat !important;
+                font-weight: 500;
+                padding: 20px;
+                width: 50%;
+                background-color:rgba(0, 0, 0, 0.9) !important;
+                letter-spacing: 2px;
+                margin-top: 10px !important;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+               
+            }
+            
+        }
+
+
+    }
+
+
+    .parent{
+
+      
+       margin: auto;
+     
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 95%;  
+        border-radius: 2px;
+        
+    }
+
+
+    .child{
+        width: 100%;
+        padding: 2px;
+        margin: auto;
+        margin-right: 10px;
+        display: inline-block;
+        background-color: rgba($color: hsla(60, 7%, 5%, 0.637), $alpha: 0.3);
+      
+   ion-list{
+       height: 100%;
+   }
+
+    }
+
+
+
+    .parent1{
+
+      
+        margin: auto;
+         width: 95%;  
+         border-radius: 2px;
+         
+     }
+ 
+ 
+     .child1{
+         width: 100%;
+         padding: 2px;
+         margin: auto;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         display: block;
+       
+         background-color: rgba($color: hsla(60, 7%, 5%, 0.637), $alpha: 0.3);
+       ion-list,.list-ios{
+           margin: 0%;
+       }
+
+
+  
+       .item-ios{
+           background-color: whitesmoke !important;
+       }  
+ 
+     }
+ 
+
+
+  
+}

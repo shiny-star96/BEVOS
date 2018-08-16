@@ -1,0 +1,92 @@
+
+<ion-header>
+
+
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <div class="class1">
+
+ 
+    <img src="../assets/imgs/pro.png">
+
+ <div class="class2" >
+  <h1>Shiny-Star</h1>
+  <h5>UI Designer </h5>
+  <p>www.google.com</p>
+  
+ </div>
+
+
+ <div class="class3">
+  <button ion-button outline icon-start>
+    <ion-icon name="ios-call-outline"></ion-icon>
+    Call
+  </button>
+  
+
+  <button ion-button out-line icon-start>
+    <ion-icon name="ios-locate-outline" ></ion-icon>
+    Location
+  </button>
+ </div>
+  
+
+</div>
+
+
+
+<div class="parent">
+
+
+
+  <div *ngFor="let i of imageArray" class="child">
+ 
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/imgs/pro.png">
+        </ion-thumbnail>
+        <h2>{{i.title}}</h2>
+        <p>{{i.by}}</p>
+        <P>{{i.TIME}}</P>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+    </ion-list>
+   
+  </div>
+  
+
+
+</div>
+
+<div class="parent1">
+
+
+
+    <div *ngFor="let i of imageArray" class="child1">
+   
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/pro.png">
+          </ion-thumbnail>
+          <h2>{{i.title}}</h2>
+          <p>{{i.by}}</p>
+          <P>{{i.TIME}}</P>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+      </ion-list>
+     
+    </div>
+    
+  
+  
+  </div>
+  
+  
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="signin" align="center">
+     <div class="ima">
+       <img src="../assets/imgs/LogoMakr_66ZWmg.png">
+     </div>
+    <h1>Sign in</h1>
+    <p>Enter your Data</p>
+
+
+    <div class="new">
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="data.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="data.password"></ion-input>
+      </ion-item>
+    </div>
+
+
+    <div class="fll" (click)="goToForgotPassword()">
+      <p>Forget Password?!</p>
+    </div>
+
+    <div class="buttondiv">
+
+      <button ion-button outline (click)="signInUser()">
+        SIGN IN</button>
+
+      <h2 class="danger">OR</h2>
+      <button ion-button  block>Sign in with Twitter</button>
+      <button ion-button  block color="darkblue">Sign in with Facebook</button>
+    </div>
+    <div class="signup">
+      <h5>New here
+        <div class="uu" (click)="goToSignup()">Sign Up?</div>
+      </h5>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</ion-content>
