@@ -2,9 +2,16 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ProfilePage } from '../pages/profile/profile';
+//import { HomePage } from '../pages/home/home';
+//import { CreateVotePage } from '../pages/create-vote/create-vote';
+import { SigninPage } from '../pages/signin/signin';
+//import { ResultsPage } from '../pages/results/results';
+//import { SliderPage } from '../pages/slider/slider';
+// import { UserProfilePage } from '../pages/user-profile/user-profile';
 
-//  import { SignupPage } from '../pages/signup/signup';
+//import { ProfilePage } from '../pages/profile/profile';
+
+
 
 // import { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
 // import { HomePage } from '../pages/home/home';
@@ -12,7 +19,7 @@ import { ProfilePage } from '../pages/profile/profile';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ProfilePage;
+  rootPage:any = SigninPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -22,5 +29,7 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+
+
 }
 

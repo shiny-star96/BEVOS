@@ -10,6 +10,10 @@ import { SigninPage } from '../pages/signin/signin';
 import { SignupPage } from '../pages/signup/signup';
 import { ForgotpasswordPage } from '../pages/forgotpassword/forgotpassword';
 import { ProfilePage } from '../pages/profile/profile';
+import { CreateVotePage } from '../pages/create-vote/create-vote';
+import { ResultsPage } from '../pages/results/results';
+import { SliderPage } from '../pages/slider/slider';
+import { UserProfilePage } from '../pages/user-profile/user-profile';
 
 
 import { AuthProvider } from '../providers/auth/auth';
@@ -19,6 +23,14 @@ import * as firebase from 'firebase/app';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { NativeStorage } from '@ionic-native/native-storage';
+
+
+import { Camera,CameraOptions } from '@ionic-native/camera';
+import { ActionSheet, ActionSheetOptions } from '@ionic-native/action-sheet';
+import { CallNumber } from '@ionic-native/call-number';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 export const firebaseConfig = {  
   //add firebase keys of web api
@@ -39,14 +51,20 @@ export const firebaseConfig = {
     SigninPage,
     SignupPage,
     ForgotpasswordPage,
-    ProfilePage
+    ProfilePage,
+    CreateVotePage,
+    ResultsPage,
+    SliderPage,
+    UserProfilePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp), 
     AngularFireModule.initializeApp(firebaseConfig),
      AngularFireAuthModule,
      AngularFireDatabaseModule
+    
+
 
   ],
   bootstrap: [IonicApp],
@@ -56,7 +74,11 @@ export const firebaseConfig = {
     SigninPage,
     SignupPage,
     ForgotpasswordPage,
-    ProfilePage
+    ProfilePage,
+    CreateVotePage,
+    ResultsPage,
+    SliderPage,
+    UserProfilePage
   ],
   providers: [
     StatusBar,
@@ -64,7 +86,12 @@ export const firebaseConfig = {
     AuthProvider,
     NativeStorage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider,
+    Camera,
+    ActionSheet,
+    CallNumber,
+    InAppBrowser,
+    Geolocation
   ]
 })
 export class AppModule {}

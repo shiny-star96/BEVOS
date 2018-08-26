@@ -1,0 +1,117 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<ion-header>
+
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-icon name="md-arrow-back" icon-start></ion-icon>
+      </ion-col>
+      <ion-col>
+        <div class="right">
+          <ion-icon name="md-star"icon-end></ion-icon>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content >
+
+  <div class="profileBackground">
+
+    <div (click)="getImage()">
+      <!--img src="../assets/imgs/pro.jpg" class="profileImg"-->
+     <img src={{base64Image}} class="profileImg">  
+     </div>
+  </div>
+  <div class="Descreption">
+  
+    <h2>Shiny Star</h2>
+    <h5>Hybrid Developer</h5>
+    <p>Sultan Qaboos University, Electrical Engineer , Interested in cybersecuirty,taking photo and more </p>
+
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" (click)="gotoalaret()" block icon-start>
+          <ion-icon name="md-call"></ion-icon>
+          call
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" outline icon-start>
+          <ion-icon name="ios-mail-outline"></ion-icon>
+          Email
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+  
+
+
+  <ion-list>
+    <ion-item *ngFor="let i of ListArray;let k=index" (click)="callPlugins(k)">
+          <ion-icon name="{{i.icon}}" icon-start class="icon1"></ion-icon>
+          {{i.des}}
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+
+  <div class="parent">
+
+
+
+    <div *ngFor="let i of imageArray" class="child">
+   
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/pro.png">
+          </ion-thumbnail>
+          <h2>{{i.title}}</h2>
+          <p>{{i.by}}</p>
+          <P>{{i.TIME}}</P>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+      </ion-list>
+     
+    </div>
+    
+  
+  
+  </div>
+
+  
+<div class="parent1">
+
+
+
+  <div *ngFor="let i of imageArray" class="child1">
+ 
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/imgs/pro.png">
+        </ion-thumbnail>
+        <h2>{{i.title}}</h2>
+        <p>{{i.by}}</p>
+        <P>{{i.TIME}}</P>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+    </ion-list>
+   
+  </div>
+  
+
+
+</div>
+
+</ion-content>

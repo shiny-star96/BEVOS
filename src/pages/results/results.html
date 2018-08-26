@@ -1,0 +1,65 @@
+
+
+
+
+<ion-content>
+
+  <div class="signin" align="center">
+    <div class="ima">
+      <img src="../assets/imgs/LogoMakr_6IfH9p.png">
+    </div>
+    </div>
+  <h1>Results</h1>
+
+
+  <div class="class1" *ngFor="let i of resultsArray">
+    <h4>Voting title :</h4>
+    <p>{{i.title}}</p>
+  </div>
+
+
+  <div class="class1" *ngFor="let i of resultsArray">
+    <h4>Responses :</h4>
+    <p>{{i.numOfResponse}}</p>
+  </div>
+
+
+
+
+  
+  <!--<ion-card *ngIf="chartType==BarChart">
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="chartType==DoughnutChart">
+    <ion-card-header>
+      Doughnut Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #doughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="chartType==LineChart">
+    <ion-card-header>
+      Line Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+!-->
+
+
+
+
+
+
+<button ion-button outline>Share Results</button>
+</ion-content>
+

@@ -1,3 +1,98 @@
 page-home {
+    ion-content{
+        background-image:linear-gradient(rgba(236, 236, 236, 0)), url(../../assets/imgs/slide8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    .card-background-page {
+//   top: calc(50% - 100px);
+//   left: calc(50% - 200px);
+//   width: 400px;
+//   height: 200px;
+//   background-color: #fff;
+//   border: solid 1px #fff;
+//   box-shadow:
+//     inset 60px 0 120px rgb(77, 72, 77),
+//     inset -60px 0 120px rgb(102, 99, 91);
+box-shadow:2px; 
+background-image:linear-gradient(rgba(173, 173, 173, 0.479));
+padding-bottom: 10px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgba(32, 36, 36, 0.5);
+        width: 95%;
+        height: fit-content;
+        div.top-header{
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            img{
+                margin-top: 6px;
+                width: 50px;
+                height: 50px;
+            }
+            div.details{
+                margin-top: 6px;
+                img{
+                    border-radius: 50px;
+                    
+                }
+                p{
+                    margin: 6px;
+                    &.name{
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.884);
+                    }
+                }
+            }
+        }
+        
+        .votingTitle{
+          text-align: center;
+          font-family: Open Sans;
+          h4{
+            font-size: 30px;
+            color:white;//rgb(53, 53, 53);
+            text-shadow: 2px 2px rgba(37, 36, 36, 0.205);
+            letter-spacing: 2px;
+            font-weight: 100px;
 
+          }
+
+        }
+
+        .votingDetails{
+            padding: 0px 10px 0px 10px;
+            font-size: 15px;
+            font-family: Open Sans;
+        }
+
+        button{
+            ion-icon{
+                vertical-align: middle;
+                margin: 10px;
+            }
+        }
+      
+      }
+    }
+
+
+    .button-outline-md,.button-outline-ios{
+        align-self: auto;
+        border-color: white !important;
+        color: white !important;
+        padding: 20px;
+        width: 90%;
+        background-color:rgba(49, 48, 48, 0.479) !important;
+        letter-spacing: 2px;
+        margin-top: 10px !important;
+        
+       
+    }
+
+    .buttonsDetails{
+        text-align: center;
+    }
 }

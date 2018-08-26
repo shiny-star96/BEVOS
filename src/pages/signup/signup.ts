@@ -4,6 +4,8 @@ import { LoadingController } from 'ionic-angular';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AuthProvider } from '../../providers/auth/auth';
 
+import { SigninPage } from '../signin/signin';
+
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
@@ -118,6 +120,10 @@ export class SignupPage {
   goToBusiness() {
     this.btn = 3;
     this.usertype="business";
+  }
+
+  goToSignIn(){
+    this.navCtrl.push(SigninPage);
   }
 
 

@@ -1,57 +1,52 @@
 page-signup {
-    ion-header {
-        .toolbar {
-          position: absolute;
+    // ion-header {
+    //     .toolbar {
+    //       position: absolute;
       
-          .toolbar-background {
-            background: transparent;
-          }
-          .toolbar-title {
-            color: black;
-          }
-        }
-      }
+    //       .toolbar-background {
+    //         background: transparent;
+    //       }
+    //       .toolbar-title {
+    //         color: black;
+    //       }
+    //     }
+    //   }
     ion-content{
-        background-image: url(../assets/imgs/Homepage.png);
+        background-image: url(../assets/imgs/reh.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         height: 100%;
-        button{
-            width: 60%;
-            font-size: 90% !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgba(97, 87, 87, 0.5) !important;
-            // margin: 0 !important;
-            border-bottom-right-radius: 100px !important;
-            border-top-right-radius: 100px !important;
-            vertical-align: middle;
-            .button-inner{
-                justify-content:flex-start;
-                
-                ion-icon{
-                    padding-right: 5px !important;
-                }
-            }
-            
+        letter-spacing: 1px;
+        ion-title{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin-top: 10%;
         }
         .signupGroup{
-            margin-top: 15%;
-            
-        }
-        .btnDiv1{
-            width: 100%;
+            // border: 2px solid black;
+            margin-bottom: 5%;
+            display: flex;
+            width: 90%;
+            height: 15%;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            color: darkorange;
+            vertical-align: middle;
+            .clickOn {
+                // border: 1px solid red;
+                width: 25%;
+                margin: 5%;
             height: 100%;
         }
-        .btnDiv2{
-            width: 100%;
-            height: 100%;
-        }
-        .btnDiv3{
-            width: 100%;
-            height: 100%;
         }
         .btnDiv1, .btnDiv2, .btnDiv3 {
+            margin-top: 5%;
+            width: 100%;
+            height: 100%;
             ion-item{
                 background-color:transparent !important;
                 width: 80%;
@@ -66,13 +61,27 @@ page-signup {
     }
 
     .button-inner{
-        color:b !important;
+        color:white !important;
         justify-content:center !important;
 
     }
+
+    .signup{
+        color: white;
+        h5{
+            font-size: 90%;
+              text-align: center;
+        }
+        .uu{
+            margin-left: 5px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 170%;
+            font-family: Brush Script MT, Brush Script Std, cursive;
     
-    .header-ios .toolbar-ios:last-child .toolbar-background-ios{
-        border-width :0px !important;
+            color: wheat;
+    
+        }
     }
 
 }

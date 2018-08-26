@@ -12,24 +12,24 @@
   <div class="class1">
 
  
-    <img src="../assets/imgs/pro.png">
+    <img src="{{base64Image}}" (click)="presentActionSheet()">
 
  <div class="class2" >
   <h1>Shiny-Star</h1>
   <h5>UI Designer </h5>
-  <p>www.google.com</p>
+  <p (click)="openweb()"><strong>{{website}}</strong></p>
   
  </div>
 
 
  <div class="class3">
-  <button ion-button outline icon-start>
+  <button ion-button outline icon-start (click)="callNumberMethod()">
     <ion-icon name="ios-call-outline"></ion-icon>
     Call
   </button>
   
 
-  <button ion-button out-line icon-start>
+  <button ion-button out-line icon-start (click)="showLocation()">
     <ion-icon name="ios-locate-outline" ></ion-icon>
     Location
   </button>
