@@ -4,12 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 //import { HomePage } from '../pages/home/home';
 //import { CreateVotePage } from '../pages/create-vote/create-vote';
-import { SigninPage } from '../pages/signin/signin';
+//import { SigninPage } from '../pages/signin/signin';
 //import { ResultsPage } from '../pages/results/results';
-//import { SliderPage } from '../pages/slider/slider';
-// import { UserProfilePage } from '../pages/user-profile/user-profile';
+import { SliderPage } from '../pages/slider/slider';
+//import { UserProfilePage } from '../pages/user-profile/user-profile';
 
-//import { ProfilePage } from '../pages/profile/profile';
+// import { ProfilePage } from '../pages/profile/profile';
 
 
 
@@ -19,7 +19,7 @@ import { SigninPage } from '../pages/signin/signin';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SigninPage;
+  rootPage:any = SliderPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
